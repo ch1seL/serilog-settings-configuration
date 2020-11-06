@@ -27,7 +27,8 @@ By default, configuration is read from the `Serilog` section.
 }
 ```
 
-After installing this package, use `ReadFrom.Configuration()` and pass an `IConfiguration` object.
+After installing this package, use `ReadFrom.
+on()` and pass an `IConfiguration` object.
 
 ```csharp
 static void Main(string[] args)
@@ -168,7 +169,7 @@ These sections support simplified syntax, for example the following is valid if 
 
 Or alternatively, the long-form (`"Name":` ...) syntax from the example above can be used when arguments need to be supplied.
 
-By `Microsoft.Extensions.Configuratiom.Json` convention, array syntax implicitly defines index for each element in order to make unique paths for configuration keys. So the example above is equivalent to:
+By `Microsoft.Extensions.Configuration.Json` convention, array syntax implicitly defines index for each element in order to make unique paths for configuration keys. So the example above is equivalent to:
 
 ```json
 "WriteTo": {
